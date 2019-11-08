@@ -83,3 +83,37 @@ else if age1 > 18 || age2 > 18 {
 // condition ? if part : else part
 
 print(firstCard == secondCard ? "Cards are the same" : "Cards are different")
+
+
+//: ### Switch statement
+
+var weatherConditions = "sunny"
+
+switch weatherConditions {
+case "rain":
+	print("Bring an umbrella!")
+
+case "snow":
+	print("Wear warm clothes.")
+
+case "sunny":
+	print("Wear sunscreen.")
+
+default:
+	print("Enjoy your day.")
+}
+
+//: ## Range Operators
+
+// ... and ..<
+// 1...5 contains 1, 2, 3, 4 and 5
+// 1..<5 contains 1, 2, 3 and 4
+
+switch score {
+case 0..<50:
+	print("You failed badly.")
+case 50..<85:
+	print("You did okay!")
+default:
+	print("You did great.")
+}
